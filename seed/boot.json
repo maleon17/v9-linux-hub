@@ -1,0 +1,42 @@
+{
+ "_comment": "Ответы main-процесса, которые ждёт фронтенд при старте: версия оболочки и адреса производителя (публичные сайты и CDN).",
+ "getVersion": "2.0.0",
+ "getTargetEnvConfig": {
+  "urlIndex": "https://www.mchose.com.cn/#/connectDevice",
+  "urlTray": "https://www.mchose.com.cn/tray.html",
+  "urlRenderer": "https://cdn.mchose.com.cn/customPage/prod/index.html",
+  "urlUpdate": "https://www.mchose.com.cn/update/",
+  "appName": "M HUB",
+  "configCenterBaseUrl": "https://cdn.mchose.com.cn/configCenter",
+  "wechatRedirectUri": "https://www.maicong.cn",
+  "apiConfig": {
+   "baseUrl": "https://www.maicong.cn/mchose",
+   "timeout": 20000,
+   "retryCount": 1,
+   "enableLog": false
+  }
+ },
+ "getEnvConfigs": {
+  "production": {
+   "urlIndex": "https://www.mchose.com.cn/#/connectDevice",
+   "urlTray": "https://www.mchose.com.cn/tray.html",
+   "urlRenderer": "https://cdn.mchose.com.cn/customPage/prod/index.html",
+   "urlUpdate": "https://www.mchose.com.cn/update/",
+   "appName": "M HUB",
+   "configCenterBaseUrl": "https://cdn.mchose.com.cn/configCenter",
+   "wechatRedirectUri": "https://www.maicong.cn",
+   "apiConfig": {
+    "baseUrl": "https://www.maicong.cn/mchose",
+    "timeout": 20000,
+    "retryCount": 1,
+    "enableLog": false
+   }
+  }
+ },
+ "getSharedConfig": {
+  "version": 2,
+  "seq": 1,
+  "langId": 2,
+  "keyBoardToastSwitch": 0
+ }
+}

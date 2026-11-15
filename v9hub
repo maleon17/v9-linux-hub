@@ -1,0 +1,4 @@
+#!/bin/bash
+# Запуск V9 Linux Hub. --hidden — сразу в трей (для автозапуска). ELECTRON=/путь/к/electron — свой Electron.
+DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+exec "${ELECTRON:-electron}" "$DIR" --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations "$@"

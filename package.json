@@ -1,0 +1,9 @@
+{
+  "name": "v9-linux-hub",
+  "version": "0.1.0",
+  "description": "Unofficial Linux settings app for the MCHOSE V9 Pro headset (PipeWire DSP, virtual 7.1 on open HRTFs)",
+  "license": "GPL-3.0-or-later",
+  "main": "main.cjs",
+  "private": true,
+  "scripts": { "start": "electron ." }
+}

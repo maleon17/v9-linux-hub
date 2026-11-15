@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>V9 Linux Hub</title>
+<style>
+  html,body{margin:0;height:100%;background:transparent;font:14px system-ui,sans-serif;color:#e8e9ee}
+  .box{position:absolute;inset:0;border-radius:24px;background:#16171b;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;-webkit-app-region:drag}
+  img{width:72px;height:72px}
+  h1{font-size:18px;font-weight:600;margin:0}
+  p{margin:0;color:#9a9caa;font-size:13px;max-width:440px;text-align:center;line-height:1.5}
+  .bar{width:320px;height:6px;border-radius:3px;background:#2a2c33;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:#5b8cff;transition:width .2s}
+</style></head>
+<body><div class="box">
+  <img src="icon.png" alt="">
+  <h1 id="t">Загрузка интерфейса…</h1>
+  <div class="bar"><i id="b"></i></div>
+  <p id="n">Первый запуск: интерфейс производителя скачивается с его сервера (~45 МБ). Дальше всё работает без сети.</p>
+</div>
+<script>
+  if (!/^ru/.test(navigator.language)) {
+    t.textContent = 'Downloading the interface…';
+    n.textContent = 'First start: the manufacturer’s interface is downloaded from its server (~45 MB). After that everything works offline.';
+  }
+  window.progress = (d, total) => { b.style.width = (100 * d / Math.max(1, total)).toFixed(1) + '%'; };
+</script>
+</body></html>

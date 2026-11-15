@@ -1,0 +1,184 @@
+/* Слой Linux-адаптации поверх оригинального интерфейса M HUB.
+   При ширине окна ≥1440 ничего не меняется (как в Windows). Классы на <html> ставит ui-linux.js:
+   .mhub-fluid   — окно уже 1440: снимаем жёсткий минимум ширины оригинала;
+   .mhub-compact — окно уже порога: боковая панель ужимается до колонки иконок. */
+
+@property --device-detail-sidebar-width { syntax: '<length>'; inherits: true; initial-value: 320px; }
+
+.device-detail-layout { transition: --device-detail-sidebar-width .38s cubic-bezier(.2, .8, .2, 1); }
+
+/* Скругление фона боковой панели под радиус окна */
+/* (в плитке Hyprland окно помечено как развёрнутое, но углы окна скруглены — поэтому без условия) */
+:root.window-rounded .device-detail-layout__sidebar-background {
+  border-top-left-radius: var(--mhub-wm-radius, 32px) !important;
+  border-bottom-left-radius: var(--mhub-wm-radius, 32px) !important;
+}
+
+/* ---------- узкое окно: без жёсткого минимума 1440 ---------- */
+html.mhub-fluid, html.mhub-fluid body, html.mhub-fluid #app, html.mhub-fluid #app > div { min-width: 0 !important; }
+
+/* ---------- компактная боковая панель ---------- */
+html.mhub-compact .device-detail-layout { --device-detail-sidebar-width: 92px !important; }
+
+.audio-detail-sidebar__status,
+.audio-detail-sidebar__status > *,
+.audio-detail-sidebar__navigation,
+.audio-detail-sidebar__item-wrap,
+.audio-detail-sidebar__item { transition: all .38s cubic-bezier(.2, .8, .2, 1); }
+
+html.mhub-compact .audio-detail-sidebar__device { padding-left: 0 !important; padding-right: 0 !important; justify-content: center;
+  height: auto !important; padding-top: 10px !important; padding-bottom: 18px !important; }
+html.mhub-compact .audio-detail-sidebar__status {
+  flex-direction: column !important; align-items: center !important; gap: 14px !important; width: 100%;
+}
+html.mhub-compact .audio-detail-sidebar__status > .device-battery-status,
+html.mhub-compact .audio-detail-sidebar__status > .device-connection-status,
+html.mhub-compact .audio-detail-sidebar__status > .audio-detail-sidebar__manual {
+  display: flex !important; flex-direction: column !important; align-items: center !important;
+  gap: 3px !important; font-size: 11px !important; line-height: 1.2 !important; margin: 0 !important; text-align: center;
+}
+html.mhub-compact .audio-detail-sidebar__navigation { align-items: center !important; padding-left: 0 !important; padding-right: 0 !important; }
+html.mhub-compact .audio-detail-sidebar__item-wrap { width: 56px !important; margin-left: auto; margin-right: auto; }
+html.mhub-compact .audio-detail-sidebar__item { width: 56px !important; }
+html.mhub-compact .audio-detail-sidebar__scroll { --du-scroll-area-scrollbar-padding: 0 !important; }
+
+/* Заголовок устройства: полное название «MCHOSE …»; в ужатом режиме — правее панели, над вкладками */
+.device-detail-layout__header .app-header__title { transition: transform .38s cubic-bezier(.2, .8, .2, 1); white-space: nowrap; }
+.device-detail-layout__header .app-header__title::before { content: 'MCHOSE '; }
+html.mhub-compact .device-detail-layout__header .app-header__title { transform: translateX(var(--mhub-title-shift, 32px)); }
+
+/* Ссылка на звуковые настройки (вместо Windows) */
+.mhub-tux { width: 16px; height: 16px; display: inline-block; vertical-align: middle; flex: 0 0 16px; }
+
+/* ---------- узкое окно (<1060): настройки «Стандарт» в две колонки ---------- */
+html.mhub-narrow .audio-routine-page__settings {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-rows: max-content var(--du-gap-16, 16px) max-content var(--du-gap-24, 24px) max-content var(--du-gap-16, 16px) max-content minmax(var(--du-gap-4, 4px), 1fr) max-content !important;
+}
+html.mhub-narrow .audio-routine-page__settings::after { display: none !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--middle-top,
+html.mhub-narrow .audio-routine-page__setting-cell--middle-bottom { border-inline-start: 1px solid var(--du-stroke-divider, rgba(127,127,127,.16)); }
+html.mhub-narrow .audio-routine-page__setting-cell--middle-bottom { padding-bottom: var(--du-gap-24, 24px); }
+html.mhub-narrow .audio-routine-page__setting-cell--primary-top    { grid-area: 1 / 1 !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--primary-bottom { grid-area: 3 / 1 !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--middle-top     { grid-area: 1 / 2 !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--middle-bottom  { grid-area: 3 / 2 !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--right-top      { grid-area: 5 / 1 !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--right-bottom   { grid-area: 7 / 1 !important; }
+html.mhub-narrow .audio-routine-page__windows-link                 { grid-area: 9 / 1 !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--right-top,
+html.mhub-narrow .audio-routine-page__setting-cell--right-bottom   { grid-column: 1 / span 2 !important; }
+html.mhub-narrow .audio-routine-page__setting-cell--right-top { border-top: 1px solid var(--du-stroke-divider, rgba(127,127,127,.16)); padding-top: var(--du-gap-24, 24px); }
+
+/* Главная: контейнер тоже держит минимум 1440 */
+html.mhub-fluid .connect-device { min-width: 0 !important; }
+
+/* Эквалайзер: подписи частот на узком окне мельче, чтобы не слипались */
+html.mhub-narrow [class*="equalizer"] [class*="freq"], html.mhub-narrow [class*="equalizer"] [class*="axis-x"] { font-size: 10px !important; letter-spacing: -.2px; }
+
+/* Режим звука: карточки сжимаются вместо выезда за край */
+html.mhub-narrow .sound-mode-page__options { gap: 16px !important; padding-inline: 8px; }
+html.mhub-narrow .sound-mode-page__option { flex: 1 1 0 !important; min-width: 0 !important; }
+
+/* ---------- вариант «колонка»: настройки одной колонкой слева, наушники справа (флаг ROUTINE_COLUMN) ---------- */
+html.mhub-narrow.mhub-col .audio-routine-page__content {
+  flex-direction: row-reverse !important; align-items: stretch; gap: 20px; overflow: hidden;
+}
+html.mhub-narrow.mhub-col .audio-routine-page__preview {
+  flex: 0 0 34% !important; height: auto !important; align-items: center !important; justify-content: center !important;
+  position: sticky; top: 0;
+}
+html.mhub-narrow.mhub-col .audio-routine-page__preview img { max-width: 100% !important; height: auto !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__settings {
+  flex: 1 1 0 !important; min-width: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: repeat(6, max-content) minmax(var(--du-gap-4, 4px), 1fr) max-content !important;
+  row-gap: 0 !important;
+}
+html.mhub-narrow.mhub-col .audio-routine-page__settings::after { display: none !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell { grid-column: 1 !important; border-inline-start: 0 !important; padding-block: 18px !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--primary-top    { grid-row: 1 !important; padding-top: 0 !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--primary-bottom { grid-row: 2 !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--middle-top     { grid-row: 3 !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--middle-bottom  { grid-row: 4 !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--right-top      { grid-row: 5 !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--right-bottom   { grid-row: 6 !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__windows-link                 { grid-row: 8 !important; grid-column: 1 !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--middle-top,
+html.mhub-narrow.mhub-col .audio-routine-page__setting-cell--right-top {
+  border-top: 1px solid var(--du-stroke-divider, rgba(127,127,127,.16)) !important; padding-top: 22px !important;
+}
+html.mhub-narrow.mhub-col .audio-routine-page__content { padding-bottom: 24px !important; box-sizing: border-box; min-height: 0; }
+html.mhub-narrow.mhub-col .audio-routine-page__settings { margin: 0 !important; max-height: 100%; align-self: stretch; }
+html.mhub-narrow.mhub-col .audio-routine-page__content { justify-content: flex-end !important; }
+html.mhub-narrow.mhub-col .audio-routine-page__settings { flex-grow: 1 !important; }
+
+/* Стык панели и рабочей области: рабочая область скруглённо «заходит» на панель (дуги цвета панели сверху и снизу) */
+.device-detail-layout__sidebar-background { border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; position: relative; z-index: 0; }
+.device-detail-layout__workspace-background {
+  position: relative; z-index: 1;
+  border-top-left-radius: var(--mhub-wm-radius, 32px); border-bottom-left-radius: var(--mhub-wm-radius, 32px);
+}
+/* под скруглённым углом виден цвет панели, а не обои */
+.device-detail-layout__sidebar-background { box-shadow: var(--mhub-wm-radius, 32px) 0 0 0 color-mix(in srgb, var(--du-on-d-c1) 10%, transparent); }
+
+/* ---------- шапка ---------- */
+/* Аккаунт MCHOSE и магазин в Linux-версии не работают — убираем */
+.header-user-action, .header-mall-action { display: none !important; }
+
+/* Узкое окно: логотип «K MCHOSE» ужимается до значка «K» */
+.header-logo-action, .header-logo-action__icon { transition: width .38s cubic-bezier(.2, .8, .2, 1); }
+html.mhub-compact .header-logo-action { width: 40px !important; }
+html.mhub-compact .app-header__logo-group { width: 64px !important; }
+.app-header__logo-group { transition: width .38s cubic-bezier(.2, .8, .2, 1); }
+html.mhub-compact .header-logo-action__icon { width: 15px !important; overflow: hidden !important; }
+
+/* «RGB синхронизация» / «Облако»: подписи, только если помещаются (класс ставит ui-linux.js) */
+/* (подписи шапки теперь не скрываются целиком — плашка ужимается плавно, см. ui-linux.js fitHeader) */
+.app-header__primary-group { flex-shrink: 0 !important; }
+
+/* ---------- эквалайзер в ужатом окне: узкая колонка пресетов, источники столбиком ---------- */
+.runtime-eq-preset-panel { transition: width .38s cubic-bezier(.2, .8, .2, 1), flex-basis .38s cubic-bezier(.2, .8, .2, 1); }
+html.mhub-compact .runtime-eq-preset-panel { width: 200px !important; flex: 0 0 200px !important; min-width: 0 !important; }
+html.mhub-compact .runtime-eq-preset-panel__source-scroll { width: 100% !important; overflow: visible !important; }
+html.mhub-compact .runtime-eq-preset-panel__sources {
+  display: flex !important; flex-direction: column !important; align-items: stretch !important; gap: 6px !important; width: 100% !important;
+}
+html.mhub-compact .runtime-eq-preset-panel__sources > du-filter-chip { width: 100% !important; }
+html.mhub-compact .runtime-eq-preset-panel__source-scroll { flex: 0 0 auto !important; height: auto !important; }
+html.mhub-compact .runtime-eq-preset-panel__sources { height: auto !important; }
+html.mhub-fluid .audio-equalizer-page__chart-card { flex: 1 1 0 !important; min-width: 0 !important; }
+html.mhub-fluid .audio-equalizer-page__workspace::part(main) { flex: 1 1 auto !important; width: 100% !important; min-width: 0 !important; }
+html.mhub-compact .audio-equalizer-page__workspace::part(start) { flex: 0 0 200px !important; width: 200px !important; min-width: 0 !important; transition: flex-basis .38s cubic-bezier(.2,.8,.2,1), width .38s cubic-bezier(.2,.8,.2,1); }
+
+/* ---------- «Облако» (пресеты сообщества): холст тоже держит минимум 1440 ---------- */
+html.mhub-fluid .cloud-page-viewport__canvas { min-width: 0 !important; width: 100% !important; }
+html.mhub-fluid .cloud-community-content { --cloud-community-content-width: calc(100% - 48px) !important; }
+html.mhub-fluid .cloud-page-viewport__canvas { min-height: 0 !important; }
+html.mhub-fluid .cloud-community-content main { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important; gap: 20px !important; }
+html.mhub-fluid .cloud-community-content main > .cloud-device-card { width: auto !important; min-width: 0 !important; }
+html.mhub-fluid .cloud-community-content main > .cloud-device-card .cloud-card-surface { width: 100% !important; }
+.app-header__primary-group [class^="header-"][class$="-action"], .app-header__primary-group [class^="header-"][class$="-action"] > du-icon { flex-shrink: 0 !important; }
+.app-header__primary-group [class^="header-"][class$="-action"] > span { white-space: nowrap; }
+.app-header__primary-group [class^="header-"][class$="-action"] { width: max-content !important; max-width: none !important; justify-content: flex-start !important; }
+
+/* ---------- Страница 7.1: профиль HRTF, тестовые звуки ---------- */
+.surround-page__switch-row { flex-wrap: wrap; }
+.hh-hrtf { margin-left: auto; display: inline-flex; align-items: center; gap: 10px; font-size: 13px; color: var(--du-color-text-secondary, #6b6f7b); }
+.hh-hrtf select {
+  appearance: none; border: 0; outline: 0; font: inherit; font-size: 13px; color: var(--du-color-text-primary, #17181c);
+  background: rgba(127,127,127,.12) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 12px center;
+  border-radius: 999px; padding: 7px 32px 7px 14px; cursor: pointer; transition: background-color .2s;
+}
+.hh-hrtf select:hover { background-color: rgba(127,127,127,.2); }
+.hh-hrtf em { font-style: normal; font-size: 12px; opacity: .7; }
+.hh-test {
+  position: absolute; top: 20px; right: 24px; display: flex; padding: 3px; gap: 2px;
+  border-radius: 999px; background: rgba(127,127,127,.12);
+}
+.hh-test button {
+  border: 0; background: transparent; font: inherit; font-size: 13px; padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  color: var(--du-color-text-secondary, #8a8d97); transition: background-color .25s, color .25s, box-shadow .25s;
+}
+.hh-test button.is-on { background: var(--du-color-bg-elevated, #fff); color: var(--du-color-text-primary, #17181c); box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.hh-demo { position: absolute; white-space: nowrap; }

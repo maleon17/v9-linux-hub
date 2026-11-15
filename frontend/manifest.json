@@ -1,0 +1,991 @@
+{
+ "version": "1.1.26",
+ "entry": "cdn.mchose.com.cn/customPage/prod/index.html",
+ "files": [
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/animation/loading.json",
+   "size": 29261,
+   "sha256": "6d58461817922e889bf7de28f133a5c26e1141f5e20372c9374846ad75abd5cb"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/img/global/defaultExe_light.png",
+   "size": 3344,
+   "sha256": "4b6e8f9278b2cf39526611ed93dfaf1d4bf387abeeb596b437f1bd7d3c040925"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/img/global/empty.svg",
+   "size": 2152,
+   "sha256": "71218632dd677b915e304567d55699c087b6d1fcd7bf4c7e8efe728153e80835"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/img/global/icon_warn.svg",
+   "size": 789,
+   "sha256": "122817681c07ba5743fcdfd735326328cbf155cb1603fa17e764960ae8526664"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/img/music/empty.svg",
+   "size": 2231,
+   "sha256": "919397d5fdc81021f9b75091d09e6c0bee5b6fed5da0f1607e42279e8f685d31"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/product_bg/V9/color-black.png",
+   "size": 173203,
+   "sha256": "54b71eaa34b292a6419354e00c04ce2b6972f34057d2191b7ac209b7d2ad9f82"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/product_bg/V9/color-blue-headset.png",
+   "size": 215629,
+   "sha256": "a6bae8f937b5eab8a4d844f086862ee0bc38f2a9fe79a79d8b4469d624ae9a69"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/product_bg/V9/color-red-black.png",
+   "size": 261801,
+   "sha256": "4311cf265c1c3ca840de49ea1dec43a294606242f83dcae0dab4628328b94c33"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/product_bg/V9/color-red.png",
+   "size": 403162,
+   "sha256": "793e09d016819c1c3260b9c7bac3f43f764f7a24ebb63d28b0fecafe45c603dd"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/assets/product_bg/V9/color-white.png",
+   "size": 295762,
+   "sha256": "7f38e96c8ceb9674b55dcc7a63664ad51738b27c2084ae8f762e0bda9b699514"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/config/MCHOSE V9 PRO--10525--14429.json",
+   "size": 1653,
+   "sha256": "163cae41f25db5882c9138cc1ae0168c5b97904c3032a8b16b9fd1af900c245f"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/config/global.json",
+   "size": 12681,
+   "sha256": "55c7e27c6382724c97bde5d98f4552d886caa04fb0f5b69d572aa4c9be6f2f24"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/config/globalLoader.js",
+   "size": 31437,
+   "sha256": "5dd8bdc09f70ffe8aa19a97f192ca4b4cbf8df44290ddbc985e66f3c307f9cdf"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/custom/cardList.json",
+   "size": 10621,
+   "sha256": "3f80e76e0175dde3d9417dbdfae88d231143a7efba2abc7422b082aaea229a2d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/custom/keyboardConfig.json",
+   "size": 5613,
+   "sha256": "9cecd915dbc982ea677c08e00439618bebe5dd7e31121f507d1687f5282e8224"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/custom/keyboardPreset.json",
+   "size": 1897,
+   "sha256": "08e7f579e1576ed7c7c3eeee26ddfd6f7b439bb3128a694cdd4cc672075f308a"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/custom/mouseConfig.json",
+   "size": 837,
+   "sha256": "32cd4a15a0bda6d6811d4458b7ba1aec0fde4081577df52215b57f89827ed9fd"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/custom/newMouseConfig.json",
+   "size": 1649,
+   "sha256": "f11d0383f98ea946d8a4cec5caf9ea5f4f0d766111a7fadaef0e8f18f0419033"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/fonts/misans/MiSans-Bold.woff2",
+   "size": 5081104,
+   "sha256": "1c5a7515b61bc82baaa2e2c2fdae2032479fb9a99e09d4d021dc17314fc5939b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/fonts/misans/MiSans-Regular.woff2",
+   "size": 4858624,
+   "sha256": "d704c1a932c0bd7e8a071d276cd81c0ed0c9fecfa26ac234f4bed0559fe1cb2d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/fonts/misans/MiSans-Semibold.woff2",
+   "size": 5034212,
+   "sha256": "78227c6ec59566785c65ac0b5312328bfa2f879918f3d7403725785615a9a8f6"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker/speaker_on_front.svg",
+   "size": 1857,
+   "sha256": "efe56c4c49bbbad524b1c66e1c604e9354031bd9d9fb32faa77e080fbe3dfb60"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker/speaker_on_left.svg",
+   "size": 1789,
+   "sha256": "05c79fd3f203b39fc6e5a6b0e98b28d5dc9ba0881239b46e67341bccfe0222c8"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker/speaker_on_left_back.svg",
+   "size": 1867,
+   "sha256": "be0ce6a543505bc927e6f46f3a6785f92e12a150420081acc2a8565c0077b5d2"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker/speaker_on_left_front.svg",
+   "size": 1870,
+   "sha256": "787598367098cd4b285685b60bf06867081b55910ead5226b0bafa817943acbe"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker/speaker_on_right.svg",
+   "size": 1798,
+   "sha256": "131adeec665fa27f5f9ddc8c834fb4321265017997b929b9fe5b285c356b7a39"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker/speaker_on_right_back.svg",
+   "size": 1859,
+   "sha256": "164c95f7915bd99251781e400cd39c30213323e415283f09ee1f491f9ae7a401"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker/speaker_on_right_front.svg",
+   "size": 1854,
+   "sha256": "9cf9dece5d8884340fd9fdfc2afe84789defd9ae4b85b999325435078f719c7e"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker_white/speaker_on_front.svg",
+   "size": 1855,
+   "sha256": "a565a15b33919b9b799f94b473896a1aeabd57d0e45068ee447327265410086d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker_white/speaker_on_left.svg",
+   "size": 1787,
+   "sha256": "8943f710694cb1c4f3f1e05e874b31554dcced171f29597fe8239ec266ef832e"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker_white/speaker_on_left_back.svg",
+   "size": 1865,
+   "sha256": "7d82e0262a00a35ffb87f15e1b325e70c67814e1efa22278e34e8dfc970749ba"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker_white/speaker_on_left_front.svg",
+   "size": 1868,
+   "sha256": "78c25f1372893acb9109f7678f59f4dfdde7c79acc5d69037f2cb69efd5229ca"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker_white/speaker_on_right.svg",
+   "size": 1796,
+   "sha256": "d4b63cb9279b8de2c9dfe696ea57272c82687fbd6aeb48efe161051c41f8e9ea"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker_white/speaker_on_right_back.svg",
+   "size": 1857,
+   "sha256": "d97c355faea44252fa015b17658e138e6c374fd2f85aa07abd4dc73c4030db2c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcAssets/small_speaker_white/speaker_on_right_front.svg",
+   "size": 1852,
+   "sha256": "b28ef7b9f620df725c86727bb162d3720e16daa9d96027b990d80c468cc292f2"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcPublic/publicResources/lang_img/en_US/open_speaker_guide.svg",
+   "size": 90443,
+   "sha256": "c8fad3a6aed449bdeb34d7922138019bd0ce0d82bce64c83b2c579be6e30acdf"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/pcPublic/publicResources/lang_img/ru_RU/open_speaker_guide.svg",
+   "size": 83783,
+   "sha256": "97ae9d720993df5ec696b94acbeb1c698b9d1325381f334ba0e6687d5873352c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/0x3837_0x3002_107_87d01957709b.json",
+   "size": 333678,
+   "sha256": "52404788123363f5a4ad26a1bb18efc76c493819c9e1bc5be3a54acf7370399d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/0x3837_0x3020_104_0f8a49e490f2.json",
+   "size": 335084,
+   "sha256": "7c253dffb91f14d11d03b913b33717d90ae43d4d81fb7f76c52cb31db0499f3b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/0x3837_0x302D_105_mgvnnvp4j0u6g5sz.json",
+   "size": 386236,
+   "sha256": "f01019b7c1604f6a2bec32ad962e478d08b2c4c7ae5c64e40c1985e7fdc95e03"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/202604031GQwv67E.json",
+   "size": 332591,
+   "sha256": "3b6136d5ac04354d85ad9e0b51b36d26e071a15b03f83cca89a87634ed7a0da9"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/202604033xXs5r1I.json",
+   "size": 332853,
+   "sha256": "d0a25825b3b743c99425cb660b0cb183752b53676de8da1b872141d8d43fc73b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/202604034MbWdF7k.json",
+   "size": 85072,
+   "sha256": "cb72d3ef37b8bcd544a87a9a4955e372acd451a8a5c72800171a5cc233b29e22"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/202604034oJ7uyyn.json",
+   "size": 332490,
+   "sha256": "d73a331c34ebdd0d871c859a44891fa050439c3dd7d604b3fe3fc7fcda33664d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403CVcwqWX7.json",
+   "size": 335259,
+   "sha256": "3148637afb0e3ffae1886a85d075bdfe46d5746c1033fefad86818106f20420d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403DgYvN46s.json",
+   "size": 330352,
+   "sha256": "57b2eb530dfac01d750e3557626663fe8bc275f50d81196714031b554bdc4062"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403GvPP1YyQ.json",
+   "size": 333575,
+   "sha256": "d0a8e1b87099fbf3865c523e61f4c9e8098776e9c54528ec2d81a559fa2e4560"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403SLOWWImi.json",
+   "size": 333972,
+   "sha256": "802fb4b4ab1b1bf19402469e63702fb8384b3861a9bf742157ecfc427b2834b8"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403USKVIg9r.json",
+   "size": 332233,
+   "sha256": "866cf8bdf9d8a678ee126bb88ecd1516699c49d51717003d5bff67e69c915512"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403V8UOCWJA.json",
+   "size": 332979,
+   "sha256": "6413ddc83afd990eca1e60683f634abcb8ab2538c5f393cdf126587c83ba804c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403b7m5VrYy.json",
+   "size": 334104,
+   "sha256": "3a8183218a78e94203502d1ebd98da07bd56ecae55a58ce57a360bc45d4400bc"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403f1GBWOfc.json",
+   "size": 334016,
+   "sha256": "fe9daeba326bd871f6e30fe4c1aa070c945f83527d9c2ab1ced4d9b39caece24"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403t6MrxuYr.json",
+   "size": 333916,
+   "sha256": "523928c9f3754886ebf20ee409365035fea5bd1aaced8192d167ac8dec253733"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260403vXB3BOvp.json",
+   "size": 332874,
+   "sha256": "718e3988655f6686a017e7f022bf1d522be43e6cfc6d00731cf53df6f8800882"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/202605185aN6Tywl.json",
+   "size": 335400,
+   "sha256": "98a62d8edd8b8467a1adfb595884742fbb528cd737beae846db4b03b56341ee1"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/202605188Mlb7cpb.json",
+   "size": 167844,
+   "sha256": "aa65a30e56dfb034b2ba9ee528028ec8c3267f5eba6d4fda8a889fedf9b5c828"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260518K6516TMG.json",
+   "size": 333940,
+   "sha256": "c3b47ec754e293fec172f0e176c8776fe4e2a54ffa98b12f3b50e26e0547376d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260518MeWd62tM.json",
+   "size": 334632,
+   "sha256": "68e9378c7b239f95a5ac7c12134e3556f0bf02ab1bec7bdaff9d41cc04f09ceb"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260518oVBVWMXn.json",
+   "size": 335570,
+   "sha256": "8c283f2c3d2adb51d96f1f142af5d751ec032ac407a0ad49a65bd7ee6ca2467f"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260518sVU0UJ1s.json",
+   "size": 333795,
+   "sha256": "28b168f6c26f1b3018d4091d39fe06e5bab2aef01bb5b1f5c67b8116dff7f38d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/202605197iJGAgV9.json",
+   "size": 336853,
+   "sha256": "b161e41026d7e3fc6c6bf0f000d03f9663385c8f782f5fd308c45d506b2b0685"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260519JZc672N4.json",
+   "size": 335987,
+   "sha256": "6c05a0bd74e399da9b7b32519bee11234d48dd1bdb2a60cc539dac145365bb2f"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/20260519MfeKpQ22.json",
+   "size": 333540,
+   "sha256": "092876bd00b30b681884ba7d46ce0877e09f0d256e126b0c4b4f78e158d844c6"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/files/common_bg_light_bmiyiek6v8g8x4ms.webm",
+   "size": 1074601,
+   "sha256": "db3c30ca272e3ca323f3c4b4fd7f54b177d94236ae2782a6bd5bd4da53646063"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/01-EDG-ZmjjKK_7c8u17rx27n6m3yf.png",
+   "size": 395560,
+   "sha256": "95d15a03ab28f5ccfac5edb009d0b459005a906d68fd2f9d425059f72bbefc4b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/01-EDG-ZmjjKK_j7dimfldu7b5ugba.png",
+   "size": 15208,
+   "sha256": "2d61ccaa29d8611d9d40ddf08a0a8eb7e09e062b3b1be0862ec3d27fdf8528d1"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/2026053062eSrSJk.png",
+   "size": 348549,
+   "sha256": "d6b14dc8d1beb0db38ae8d3db8888e9804e35bbca8a9d4799a88e579c64a8d3c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/common_bg_cover_light_l8ey8ugzeae85yl8.jpg",
+   "size": 14898,
+   "sha256": "100f1c7561dad20ff73778dcf1afd08b120a83f1401f4c6e698c2e5ddb6bc87a"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/fanren-azure-sword-cover_le6lfads4y6v00ze.jpg",
+   "size": 33496,
+   "sha256": "ce2072dc80e25aff5f2dcff1b5fdebf8dd54623dbd34bca682f859fce5e06ad8"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/fanren-core-formation-cover_jdps3rp6ms9tk6s0.jpg",
+   "size": 43687,
+   "sha256": "1633652c8124ccc1225ffabfc60997a978042e376fe49d4e81f6dc00ee60c6f2"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/fanren-eye-of-the-void-cover_g5saisq9e76en6ov.jpg",
+   "size": 41212,
+   "sha256": "1ee6a199a144e2610d545b08f878ce9792714103eecd366599943472683ebe75"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/fanren-mchose-collab-a-cover_v8gpx74c2qhn9lxc.jpg",
+   "size": 39530,
+   "sha256": "3951ce263ca2a5c675be27f9abcb1fbb77e3eb8c6195f251c3e94a13ef9fb370"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/fanren-mchose-collab-b-cover_kx4tiwc9q7z64p3z.jpg",
+   "size": 33320,
+   "sha256": "bbe6c1d87b7818c5740021e4a20f958486ecabc7408a8674aaaca35e826cf4b4"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/fanren-sacred-tree-treasure-hunt-cover_65zrjtfye5d6kgn5.jpg",
+   "size": 39604,
+   "sha256": "10159c9d915d6ce69199f35c987f9525358e6f6bcf7c31bd9cd4eb4f2b4ba885"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/fanren-spirit-battle-cover_rg0u22rmaaqxxsg9.jpg",
+   "size": 32938,
+   "sha256": "79d7fcae35e11b97385181d3925584b587c4973c6bee52740b2d15bb1083b2e7"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-abyss-black-cover_uo78gndeqpredxjg.jpg",
+   "size": 10158,
+   "sha256": "0cff007f40dcfec308aa110fae2ba38043e692106eaf8e37cc0438b5d790a8d6"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-abyss-blue-cover_cts91pvxnlavdfwg.jpg",
+   "size": 21563,
+   "sha256": "eca4591b2a04e02820ba29018d1fd4b253613829b1118b8257fcf5d6cc711150"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-ace-68-turbo-cover_xk4g8hlffia1vqxt.jpg",
+   "size": 22196,
+   "sha256": "a0d07c97b0c459366750028b6ce16320e4cb0e61b80862f55d0bd2c06df506ad"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-ace-75-cover_9z4sxsh6c4a0ogzq.jpg",
+   "size": 22569,
+   "sha256": "b9aee5fccb34485c33383b7438f436d8cc12eefaf2ea43bb1d16a99f03d2d498"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-aurora-blue-cover_cp7u3z5xhbr9dcep.jpg",
+   "size": 11728,
+   "sha256": "be1668b97456b583b6331e54056876d26c5b9824e817dd59d39a060abf2eb89d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-berry-red-cover_zcf35te0m6aaapcr.jpg",
+   "size": 26229,
+   "sha256": "5c032d2b8c75b3c72963a81bef44acc4c351c65be4ad0e6a226c87a0e3553c1a"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-cool-silver-cover_cbtltvvpvf8qxf33.jpg",
+   "size": 15880,
+   "sha256": "9f261c10b2b94458d4792e044e0c607fad67f89bc1dc4352c3f7e9a8a08c1747"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-cyber-green-cover_5czedz1e6l0kdv22.jpg",
+   "size": 16755,
+   "sha256": "e7fed2a0252e7921617634de2fd2f011988ea2a282896069a6919bda1cf454d6"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-dawn-gray-cover_yhsfcl68dvu7q4pt.jpg",
+   "size": 18480,
+   "sha256": "e4c749bdb8cfa39461ee44c82f957c3e73fa031d3c04321969d2b6f08be7242d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-device-connection-cover_214cuj99lhramg52.jpg",
+   "size": 93235,
+   "sha256": "63fc4883a7e5c87b5113c8ffb5649c6f55ab026d8a4f050c9b361a75f183e198"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-earth-cover_8hhosoj1rl6damzd.jpg",
+   "size": 20869,
+   "sha256": "123602354fac88b65b108284377586048134daa61c9ea9e0ed2066f534c54b91"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-gt-75-cover_ndxfek0miruigybi.png",
+   "size": 33820,
+   "sha256": "a2e3e0b8d51272fa72f9832e0f0747e8dfe8cf5b92222c20b70d5fcffb5adc87"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-lake-blue-cover_s48jkg10wxbgc2so.jpg",
+   "size": 16635,
+   "sha256": "1c1c17093892929732f570b54cab0cef2e31785331e78e61cdd9f05083631d70"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-mambo-green-cover_7ci6yui0z2xbpc9d.jpg",
+   "size": 17538,
+   "sha256": "84cf1cdade9a4a69e4ecc0e7f9bdd0a5ed25ec2fb7b275be38b794c352464ade"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-mirror-white-cover_igbt6ebuj20fj3y4.jpg",
+   "size": 16931,
+   "sha256": "0b01a5cd3b98386e1036f4177c95801700c18f7358a0524066e122594c70b355"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-mist-pink-cover_10niw5s6qw4jnucr.jpg",
+   "size": 36106,
+   "sha256": "56835ba8830ddb5e756f01e4672d88b3a2042413f4b0e59f87a7e531d0eace4f"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-night-purple-cover_z71k773willy26z3.jpg",
+   "size": 15412,
+   "sha256": "f9bf0b2c7bb892eb32d724936df65e50aad5edaf6cb08ad70b4960a570808264"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-phantom-ocean-blue-cover_13yilslky97w9bmz.jpg",
+   "size": 12301,
+   "sha256": "1b27f80c26bd457c04368ad886f78f4eda055950d7392f571d73ccc558037cf4"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-sakura-pink-cover_2p0ng54pillt0tc9.jpg",
+   "size": 24550,
+   "sha256": "7c198f3cfbd0ad6ce8e2b69f5d3968c58f9936dba3073ef36bc7f3f134aa4737"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/official-star-orange-cover_cvawkistjhw79nt9.jpg",
+   "size": 27210,
+   "sha256": "0e945bae56a701eb6167f51960ef1bb7ac3d6b53a144786c6275ee4cbc245e65"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/signIcon_en_mqhlg5kvj6sxdda3.png",
+   "size": 3087,
+   "sha256": "65b4c3295b93aa183d152ccee09349aa5b669d888ebbf14a761d54f8fe801f17"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/平铺视图_2x_tsw6asu4qnv1v4lh.png",
+   "size": 754000,
+   "sha256": "210fc61187777e0e4fb4bea15e2073f8b42e538332ff7631643561b5ade2894b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/沉浸视图小卡_2x_u6eehkea7ve8hxzd.png",
+   "size": 180753,
+   "sha256": "bd5435a965dfaa098154e02b33408211f90e2efe3e0e24dff449d0eb6af9cc93"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/沉浸视图广告壁纸_5kgph4c4fid7ol6o.jpg",
+   "size": 349960,
+   "sha256": "609de336c5712879466412d6185305d88be61298c350194d45a4aba9487e1b1f"
+  },
+  {
+   "path": "cdn.mchose.com.cn/configCenter/static/images/白按钮_2x_oazoqathgm3ehoy8.png",
+   "size": 1997,
+   "sha256": "a47ae9f55ee8aa1c7305e2a459f98a6dbe3a491f391be1bf56f3b54995371175"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/driver-ui/driver-ui.css",
+   "size": 13788,
+   "sha256": "f16f6068b68ed893a7a0513e0ff1582d034817ed3c13b3c2528a976bac82ddf8"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/driver-ui/driver-ui.global.js",
+   "size": 524431,
+   "sha256": "21aa1e9b22e36f8c4b9569a9e6b52c762cd3dbfe806238f3205f61459b8b40b3"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/driver-ui/vue/driver-ui.vue.js",
+   "size": 35836,
+   "sha256": "5ec8b103c473af9508caf9b832bc224490f57779e559f7a49e72e62cf7239628"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/iconfont/demo_index.html",
+   "size": 427293,
+   "sha256": "bf844cadc5cb251202c8843af1bc284c5306384ad5f0e1d66dda3568e1a6bb51"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/iconfont/iconfont.css",
+   "size": 27597,
+   "sha256": "9635468cf0651a93dd4f62ec80169b8915c3f05da815445f4840e384a17f51fb"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/iconfont/iconfont.js",
+   "size": 547671,
+   "sha256": "88ef1353ef664902da48816502da9ed4dce9539a437f075ffc1f30c3e3ab3ca6"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/iconfont/iconfont.woff2",
+   "size": 60080,
+   "sha256": "d05123cb2137639a3593a28c95e694ecb24cd9ceac15bfe02afaa38cffea537a"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/FeedbackPage-A8Hflyqw.js",
+   "size": 122333,
+   "sha256": "5c20373120484cef31e00a9f328f39499decad282c2dbaad847ae47d3971d7e9"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/FeedbackPage-Dw_2hJPl.css",
+   "size": 49005,
+   "sha256": "fa829a5daed4a5eadc040c0882b3e14ca0edb398e3c84c26db3c4ba479bcad26"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/_plugin-vue_export-helper-u1IpNLfq.js",
+   "size": 165358,
+   "sha256": "c1c63b67a0f4290bc5c3e7bc59a5ece03bab5d9477ed886edfb7da4191a58510"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/connectHeader-BLhK-mdB.css",
+   "size": 1026,
+   "sha256": "d8a52b8eafd309b897be6f55e783d17d5c893747b3ccec6aa804e885568cc028"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/connectHeader-DuDuixAD.js",
+   "size": 3153,
+   "sha256": "a304b7e8ca89de1b71b0dc4921d18fc389d18545567a2704d428dd2c53d9c7ab"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/context-DtKXj1tl.js",
+   "size": 288,
+   "sha256": "e9b6d0e2b6dcba16774b4befddf84ee890afce1a10d9aa703cbea183bc3f6e68"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/dotMatrixGifEncoder.worker-DEpxpEZM.js",
+   "size": 7298,
+   "sha256": "f6ffacacdb19a4d31999ffd5f146efa850a5a6e8d787fae9ea978201d67c0b07"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/eqAuditionPip-BYdeIseH.js",
+   "size": 4726,
+   "sha256": "3e06ec8654ea6307de982830a8268b6f6a02718be8078b3cd227dc06761601b3"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/eqDraft-DqPCs0kO.js",
+   "size": 758,
+   "sha256": "ecfd3aac000a9d1a5d4deca2477eda66d03e6f7a877e68f993992082c5eddf2d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-8-sI1FL0.js",
+   "size": 3962,
+   "sha256": "4d2269b9a3b74d74e1cf08f20d71f69acc53564fb9267dbcdb7db3e8d0c61440"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-9xysaN35.js",
+   "size": 3785,
+   "sha256": "005d6c75680f6bd7cf425d4dca291a434ef1f07cda7d0c23eef8f1bfb7317c5f"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-B-rYzq0u.css",
+   "size": 37117,
+   "sha256": "a56db955608abbac774aa98adc4e54167b75d9922aecb83fbbf9fec984a15a29"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-B57kk3yg.js",
+   "size": 17099,
+   "sha256": "a382a76ac01e6c121a31ebfd065eb9a658b1c35c14f47786d83f7787c08a9aec"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-B5JhdCkt.js",
+   "size": 93119,
+   "sha256": "18cd057735fe2e813cf2f5783f4b03afad4ec07d35453f11304f9794a0c9060b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BBdOyVw7.js",
+   "size": 29627,
+   "sha256": "8394039aa3a0d023807d1384f9359691e68f60d72304c70b16d2d6ddd27adcd0"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BL6_WplD.js",
+   "size": 16699,
+   "sha256": "17f471f804ad89ad7f18697c0af1d067c3c4afdf6ccc105f7dcb1a233b9d7c11"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BNDZeNCX.js",
+   "size": 10211,
+   "sha256": "4d9c66ddc635ffcbbee0a3cf306639f2b6ea92a839bdf2b9a311131cf64f6eaf"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BNLtIzMc.css",
+   "size": 6940,
+   "sha256": "906f8fc6915414f03018579e57264174a04854b6ecbfb2061d325aefbd998cf0"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BkebLgIO.js",
+   "size": 13793,
+   "sha256": "e7e44882252a8d5421c1f9a287073aa73c482ff3c60d105486f28e3c1efc9468"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BlAsSKWI.js",
+   "size": 8977,
+   "sha256": "c5e13b57b1d7c7d4b68c0c9e5f9f7f1a56fe4e2d74e5aca732dbdc5be2fe8365"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BpHauOGg.js",
+   "size": 53329,
+   "sha256": "72c0ad8075e911be5a5473bb07987798929c6b50a01975acbe0840cad6c82971"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BqJ4ZnPc.css",
+   "size": 5965,
+   "sha256": "c0e396721b16a977dfdd55838751212abc11713381fb4ae6a07e5ce7d059261c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BwKZ_Sbg.css",
+   "size": 106044,
+   "sha256": "b57251f63ae9a967ac84a2e811ff725ab8034ab925dde78cf1a77733de4c8f62"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-Bw_5OJAg.js",
+   "size": 34361,
+   "sha256": "78616211c225e6dde38e72297c789d74d2a13539fd68e9d06646f5d830e3c8b2"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-BzjxB6kC.js",
+   "size": 59970,
+   "sha256": "1ad3d1a0e3362939e542676e41892a7d770e4cf2a25b302d4e8b5e4e228c92b4"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CAnP4dTa.css",
+   "size": 10170,
+   "sha256": "082e674b4d01a3ac995059340e0fd471870fb926afc94875e5ec8ec0d6dab53b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CC3N3kKp.js",
+   "size": 53957,
+   "sha256": "baf638086048a7f92ef57a7ad010bab24edefc692e138a356ee2f72b4d468e6a"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CD14FeOw.js",
+   "size": 7639,
+   "sha256": "e572b960f320a31d597293f90e8d91cf9c6df5e6c2004021a201d5c128758704"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CKrxwoR2.css",
+   "size": 44358,
+   "sha256": "89fe39f588879ce642def291e36fcc1e1a6680656d253672ccf275a8d2986227"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CT0lqqTZ.js",
+   "size": 1439137,
+   "sha256": "7a93cacd08599293f29105f85c63e607b5175b7aed54c274ea24fc220791910c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CTt4fsgX.css",
+   "size": 21579,
+   "sha256": "bd3bd96774504cafc7114b619d97684b9e87a15e3bc8d730c0cfbd299395f626"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CU4oNLIM.css",
+   "size": 3700,
+   "sha256": "1d72227e7e8a9a1271988a5a199f248b92cccc12e26472013fd1a8a87b82ff85"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CkOdPXPY.js",
+   "size": 167005,
+   "sha256": "674faac0d26e0a450ecc00a0aa429cf54b84b6d0dd54d6938468704e2ea21838"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CmG4EzGD.js",
+   "size": 37866,
+   "sha256": "0e8e59ee0b4b6439114d359c7de4284a6b911d2b38591cde05067215c638c57c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CvjJL4LG.js",
+   "size": 11655,
+   "sha256": "8a6882be6c8f8a023a43bf76f617d83c5f31adbe2778fa4e34a042a9db219322"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CxjhTzMk.css",
+   "size": 4585,
+   "sha256": "81f1f2b1e343211d6193d956032cd6bc0680b95ba8d200011af46aa35a7d1b35"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-CxwSoQxS.js",
+   "size": 50464,
+   "sha256": "b4dae39d712cab5443a757982f73f28eace9a6ded32ec198e1ce8e3ddcefde92"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-D337yBAv.css",
+   "size": 4271,
+   "sha256": "373171fe343db199445f55137794393ddbabf1a0808eb3dc8d16e28418de7758"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-D9rLGaLo.css",
+   "size": 7380,
+   "sha256": "8046061b3d7a2347385556d93aa862a8ce31afe7f9c834720e1d597ad6e784c4"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-DAdCbrNC.css",
+   "size": 11307,
+   "sha256": "01a69146059b80e66bea34e87420e9210dbf56906fc6f561637dd853aa132f1e"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-DAmPlxyO.css",
+   "size": 4340,
+   "sha256": "b082b004ea5f80b01d89f6f5c5bb31bed6ca21a6fecddac3780cea348c6aa8d7"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-DFs5XGtS.css",
+   "size": 19253,
+   "sha256": "1bb3228a6dc9b2ceb81f3df7c5ce4964613f4b76839990b32d4a93be193e8b13"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-DQSfHK7e.css",
+   "size": 89138,
+   "sha256": "7200aa782ccbc874a177255b45ad6a6c28828125bdb83c6b3b3e37d0091eadf8"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-Dbr5vjfC.css",
+   "size": 38645,
+   "sha256": "146394e625edfed6c9911262d6e1303cfbfdcdcd2b728590a78fea15959d775b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-DdN4EF-y.js",
+   "size": 12262,
+   "sha256": "a71af13d0c5c60ce0e28bb1864274b00a415fa74c8295ba2b909168872c94a0f"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-De3mthp9.js",
+   "size": 80316,
+   "sha256": "a133394acab03df8eb85df72e5b8c11b55b4cc793545fdde16c9535bbae1d0c2"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-Dmf71n68.js",
+   "size": 171093,
+   "sha256": "a632dffcb9b0268419e16da026eb71ac53188380fadf1e65198cda4290e62595"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-DqHpRRJI.css",
+   "size": 4441,
+   "sha256": "d6d67435330ebf02abf06fb13f658fc1818f25c1342c4889264e2decdd1840a5"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-DuTRA4lm.css",
+   "size": 11155,
+   "sha256": "49375d22c4ffbf190768c80fb43c2d0c0292ba402bd2dc184a0313d49d98eb89"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-YY9HnwbT.css",
+   "size": 11022,
+   "sha256": "d323322200651d1d22b4ff5a017f44207ecb10786383d3c0659e1aa909a045f2"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/index-nrmAnfHt.css",
+   "size": 1715,
+   "sha256": "d356460607a35bf114a5aee0805f5a2aae64fa2cb70c09a5ca14c222efa11574"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/initializeControlSubscription-Dw--LrVu.js",
+   "size": 267,
+   "sha256": "b1aebd90ba776c075933e20005f942ca3ba14975b0fa0633d485aba379172173"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/k20GtLyricAnimation-JFhKo9hb.js",
+   "size": 4350,
+   "sha256": "3981840af3549fda0a66b31d81dc1dd679d2349d2c5af1487c2e784d8a07928d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/k20GtLyricPreviewLayout-Bmb7s2na.css",
+   "size": 365,
+   "sha256": "f5a1f0c7e4065636adb7d5e09ee7d25e872545c4a5222929c3e8a3e24aa8cb50"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/k20GtLyricPreviewLayout-MccYC2Wt.js",
+   "size": 327081,
+   "sha256": "986a2a41e605e79ef7617c202c8c17ebaf1cd5347d1d445cbc453d5a43444882"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/keyboard-DyiFWJF1.js",
+   "size": 6927,
+   "sha256": "6458daf4c474c7dc401e48a150f8f8fdb38b610d389c1821da6b9c4b58b1bd78"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/legacyGlbKeyboardLayout-CJ_iALAH.js",
+   "size": 2201,
+   "sha256": "e3cef0160cbbd895f58007098f54eca473b003e2c5f25f1506415bf1cabe29e3"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/list-DUzt5rXS.js",
+   "size": 14725,
+   "sha256": "d4357a5aa61201656d6f8d5421dc8e0f1b6584bc1c1910ef0fd884fa35c9894c"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/list-Dy7qaBPs.css",
+   "size": 3318,
+   "sha256": "c530f851162f8c24add6c288af87e22a878a767ffc5942b01bd6d7d68045af32"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/main-BJqFN5DR.js",
+   "size": 10765,
+   "sha256": "60924279e11859aa91e9b6c0988d48020a6d8c82e7949e25719f8857c0a4048a"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/main-Bk5gkn5g.css",
+   "size": 864294,
+   "sha256": "ba98e69017be4d1e09bbc4947d445b91e25152bc6a26327ba4f9c9ac205df3d9"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/main-MopJAj_H.js",
+   "size": 7682497,
+   "sha256": "cbce8c3230ed9900e8ca8d53e5314deee556f7a5db927e4c2ac9f8fc9d369689"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/mousePreview-BS5eruIK.js",
+   "size": 56805,
+   "sha256": "72b2bc9b4630fd64e081cb1c7a34ed47d46519b5a3f297c450fe69e731a69af1"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/mousePreview-Xz4bk1eB.css",
+   "size": 18148,
+   "sha256": "b8fdebdae02e93f048650f89c706babf52d7ecb9eeb08ff65f1fe2237df3c9e0"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/officialEqSource-CctKK_5N.js",
+   "size": 51740,
+   "sha256": "c3520457cc7dc4cfabae213586f4c6de3afeae316f05a08c3c62db640b90f511"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/officialEqSource-CcxifCOZ.css",
+   "size": 7561,
+   "sha256": "8c15c22191aea3817de9c8a94cd434a864341724f270e1cabe646a573c05bea5"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/previewSync-BqLQ0w5s.js",
+   "size": 4741,
+   "sha256": "8d70af7ed8d2ee937d59605e89705c105f9f2ef0acb34fd1066c0836bdf143e4"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/purify.es-DxJI3Wx7.js",
+   "size": 22559,
+   "sha256": "a84b00f6efb1623a91f8ded09bc06ef5645a1aa5b5305ec092ddf080cfb141c9"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/replaceTemplateDialog-Df8UTSYH.js",
+   "size": 5872,
+   "sha256": "4da6a6b0d092561874330dafb35b615b870becf14a9e8e5cbc771b72dbc67d41"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/share-Cnr4V8rA.js",
+   "size": 4756,
+   "sha256": "ed7476818a096d1b12e2c3326eeafb76b025a04d5951f5831eb3fbfff580171a"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/storeWatcher-BB8T_EOD.js",
+   "size": 10573,
+   "sha256": "6b39ed68958901c47f3035aa66f11196a568a473873e4b40b5dae5554b01e7b3"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/toast-Cc8eARUc.js",
+   "size": 857,
+   "sha256": "7c2dfcb46ac9e63d4aef610968684d14b69f6ef5deac75d84c8bb74326421563"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/useK20GtPaletteColor-C41N0bZH.js",
+   "size": 484,
+   "sha256": "c0678597c8493cda17baa4913fccc83a7d7f0c04d87462c5dc240ac6e1d9ae03"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/useK20GtPreviewStore-Cnd4c57p.js",
+   "size": 6387,
+   "sha256": "0b1de27c91bc326f63aef0adc8b4593a78b0d8a1ad5bd236b9248fc065b5fab1"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/useK20GtScreenTextMarquee-1Um72EO_.css",
+   "size": 7766,
+   "sha256": "1b20546a7450235ea2025140208dc1b066610113def6903550da25717e8ea804"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/useK20GtScreenTextMarquee-D2_Nf4g4.js",
+   "size": 21493,
+   "sha256": "46a75775e6292f82d14c293f031f336242da9cde029c83660f714aa686596d37"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/assets/useWebLyrics-DxbYJKWy.js",
+   "size": 104095,
+   "sha256": "c787bbe3b01cd83ce3ef67ee52f98fc7cb5e1e32bb4ae4024b7f18e53a0b30a3"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/asset-manifest.json",
+   "size": 5688,
+   "sha256": "0d393b91672658a54166418091674efcc078ce3f0caecad60998b3c37fb5882d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/async-chunks.eb3cc63b291311124c88.js",
+   "size": 114296,
+   "sha256": "3011d16dd70e4b79fc08ecedb54acd549789d7d0b4d8f5ce8114860572eed711"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/default-keys-ace60.0dad521125efd34a8292.js",
+   "size": 8234,
+   "sha256": "fa022c3d316d7fdc4b15ce0030866e3111554d573ca2f8f68316221913a6441e"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/default-keys-ace60x_i.82c0b52b407281b08633.js",
+   "size": 246,
+   "sha256": "dc4149e35d1da3779bf5d1818e9a0e5f833461b6386cba9a26a4fa4325133009"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/default-keys-ace68_i.90a2ebbfac36daac963c.js",
+   "size": 8234,
+   "sha256": "f2bfef749235f3fefd6a46a7a708547c716e9e1da7bda8fbb17238466ef0d530"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/gif-preview.ed9bc11aac6c4fd488f3.js",
+   "size": 343773,
+   "sha256": "7595f4e68fdc2438a66db979e64f467f87190f2cf4dc43b6574e800c7966f471"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/loader.js",
+   "size": 28570,
+   "sha256": "aac9e4fd2175a5dbce12a6302f910cc9cf98e44365a652bde6b923d35124133e"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/lodash.1e0153938fbb9c24d9c7.js",
+   "size": 51296,
+   "sha256": "b7540815648a207bef60e4b0b5b7caa342bf09a13da45f47cd91e9701ace1648"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/main.002bbdb0f17b5f7135ee.js",
+   "size": 748527,
+   "sha256": "d47d1d0e9e86efbbc1888d17f3bc5cd5caba73c06149a6f1fe26bb3d9386cbc3"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/runtime.c943e3fc6a62caf37504.js",
+   "size": 7518,
+   "sha256": "67887a16b0865c7c3b0e6d9a672f34f71ff0274a6b77f99be1edcb4e576c1f5d"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/cizhou/CZ_SHARED_DATA/vendor.eb5dd870edfd0970b87f.js",
+   "size": 286101,
+   "sha256": "ac9a0a53c98438e65fc2b61936bcdc1a8717fa8532bf52727453a9038bb4fc06"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/index.html",
+   "size": 2350,
+   "sha256": "546713b6d6c495a8a5363d754e0d00e456cd96031adab26564663c37ce19490b"
+  },
+  {
+   "path": "cdn.mchose.com.cn/customPage/prod/mchose.ico",
+   "size": 16958,
+   "sha256": "d199da90936bbb9d946e8a86f9564cbf109561116ee2df382dd3885004d570ef"
+  }
+ ]
+}
